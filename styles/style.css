@@ -25,6 +25,9 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .logo__place_header {
   position: absolute;
@@ -34,15 +37,12 @@
 }
 .header__title {
   width: 730px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 64px;
-  z-index: 2;
+  margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  position: relative;
+  z-index: 2;
 }
 .header__subtitle {
   width: 388px;
@@ -61,7 +61,7 @@
   width: 765px;
   height: 608px;
   position: absolute;
-  bottom: 7px;
+  bottom: 0px;
   right: 0;
   z-index: 1;
 }
@@ -192,16 +192,22 @@
   text-align: center;
   background-color: #1f1f1f;
   overflow: hidden;
+  position: relative;
+  padding: 90px 0;
 }
 .section-title_theme_dark {
+  position: relative;
+  z-index: 1;
   color: white;
-  padding-top: 90px;
 }
 .section-subtitle_theme_dark {
   color: white;
+  position: relative;
+  z-index: 1;
 }
 .table_theme_dark {
-  margin-bottom: 90px;
+  position: relative;
+  z-index: 1;
 }
 .table__cell_theme_dark {
   width: 200px;
@@ -212,8 +218,12 @@
 .kaufman__triangle {
   background: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
-  background-position: right -250px top -20px;
   background-size: 877px;
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: -17px;
+  right: -210px;
 }
 /* footer */
 .footer {
@@ -247,14 +257,15 @@
   text-decoration: none;
 }
 .column__content {
-  display: flex;
   flex-basis: 711px;
-  justify-content: space-around;
+  text-align: end;
 }
 .column__content_info {
+  display: inline-block;
   text-align: start;
   color: white;
   padding-bottom: 16px;
+  padding-right: 200px;
 }
 .column-heading {
   padding-bottom: 20px;
@@ -271,6 +282,7 @@
   font-weight: normal;
 }
 .column__content_social {
+  display: inline-block;
   text-align: start;
   color: white;
   padding-bottom: 16px;
