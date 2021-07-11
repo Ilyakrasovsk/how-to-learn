@@ -1,8 +1,4 @@
 .video__iframes {
-  padding-top: 50px;
-  display: flex;
-  position: absolute;
-  bottom: -60px;
-  left: 240px;
-
+position: relative;
+top: 50px;
 }
